@@ -19,8 +19,8 @@
 #include <iosfwd>
 #include <cassert>
 #include <algorithm> // for std::min and std::max
+#include <limits>
 #include <boost/config.hpp>
-#include <boost/limits.hpp>
 #include <boost/random/detail/config.hpp>
 #include <boost/random/detail/seed.hpp>
 #include <boost/random/detail/seed_impl.hpp>

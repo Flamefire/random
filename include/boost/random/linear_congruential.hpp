@@ -18,10 +18,10 @@
 
 #include <cstdint>
 #include <iostream>
+#include <limits>
 #include <stdexcept>
 #include <boost/assert.hpp>
 #include <boost/config.hpp>
-#include <boost/limits.hpp>
 #include <boost/static_assert.hpp>
 #include <boost/type_traits/is_arithmetic.hpp>
 #include <boost/random/detail/config.hpp>

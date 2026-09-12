@@ -20,9 +20,9 @@
 #include <cstdint>
 #include <iostream>
 #include <algorithm>     // std::equal
+#include <limits>
 #include <stdexcept>
 #include <boost/config.hpp>
-#include <boost/limits.hpp>
 #include <boost/static_assert.hpp>
 #include <boost/integer/static_log2.hpp>
 #include <boost/integer/integer_mask.hpp>

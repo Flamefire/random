@@ -17,8 +17,8 @@
 #include <cstdint>
 #include <istream>
 #include <iosfwd>
+#include <limits>
 #include <boost/assert.hpp>
-#include <boost/limits.hpp>
 #include <boost/config.hpp>
 #include <boost/integer/integer_mask.hpp>
 #include <boost/random/traits.hpp>

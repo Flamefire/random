@@ -14,8 +14,8 @@
 #define BOOST_RANDOM_DETAIL_LARGE_ARITHMETIC_HPP
 
 #include <cstdint>
+#include <limits>
 #include <boost/integer.hpp>
-#include <boost/limits.hpp>
 #include <boost/random/detail/integer_log2.hpp>
 
 #include <boost/random/detail/disable_warnings.hpp>

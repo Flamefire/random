@@ -21,7 +21,6 @@
 #include <boost/config/no_tr1/cmath.hpp>
 #include <iosfwd>
 #include <boost/assert.hpp>
-#include <boost/limits.hpp>
 #include <boost/random/detail/config.hpp>
 #include <boost/random/detail/operators.hpp>
 #include <boost/random/detail/int_float_pair.hpp>

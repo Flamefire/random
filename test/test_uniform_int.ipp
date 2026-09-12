@@ -11,10 +11,10 @@
 
 #include <cstdint>
 #include <numeric>
+#include <limits>
 #include <sstream>
 #include <vector>
 #include <boost/config.hpp>
-#include <boost/limits.hpp>
 #include <boost/random/mersenne_twister.hpp>
 #include <boost/random/linear_congruential.hpp>
 #include <boost/random/lagged_fibonacci.hpp>

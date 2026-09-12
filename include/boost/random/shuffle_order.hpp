@@ -19,8 +19,8 @@
 #include <iostream>
 #include <algorithm>     // std::copy
 #include <cassert>
+#include <limits>
 #include <boost/config.hpp>
-#include <boost/limits.hpp>
 #include <boost/static_assert.hpp>
 #include <boost/random/detail/operators.hpp>
 #include <boost/random/detail/seed.hpp>

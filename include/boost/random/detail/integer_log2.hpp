@@ -14,8 +14,8 @@
 #ifndef BOOST_RANDOM_DETAIL_INTEGER_LOG2_HPP
 #define BOOST_RANDOM_DETAIL_INTEGER_LOG2_HPP
 
+#include <limits>
 #include <boost/config.hpp>
-#include <boost/limits.hpp>
 #include <boost/integer/integer_log2.hpp>
 
 namespace boost {

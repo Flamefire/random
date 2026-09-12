@@ -17,7 +17,6 @@
 #include <iosfwd>
 #include <istream>
 #include <boost/config.hpp>
-#include <boost/limits.hpp>
 #include <boost/random/detail/operators.hpp>
 #include <boost/random/uniform_01.hpp>
 
