@@ -181,7 +181,7 @@ public:
           for (unsigned r = 0; r != bit_count; ++r) {
             value_type& num = cj[dimension * r + dim];
             // set the jth bit in num
-            num = (num & ~j) | (-v[r + u] & j);
+            num = (num & ~j) | (-static_cast<value_type>(v[r + u]) & j);
           }
         }
       } while (j != 0);
