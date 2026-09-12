@@ -356,7 +356,6 @@ void seed_array_real_impl(const boost::uint_least32_t* storage, RealType (&x)[n]
 template<int w, std::size_t n, class SeedSeq, class RealType>
 void seed_array_real(SeedSeq& seq, RealType (&x)[n])
 {
-    using std::pow;
     boost::uint_least32_t storage[((w+31)/32) * n];
     seq.generate(&storage[0], &storage[0] + ((w+31)/32) * n);
     seed_array_real_impl<w>(storage, x);
