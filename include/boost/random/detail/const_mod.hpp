@@ -129,8 +129,8 @@ private:
     BOOST_ASSERT(suppress_warnings == 0);
     IntType modulus = m + suppress_warnings;
     BOOST_ASSERT(modulus == m);
-    if(::std::uintmax_t(modulus) <=
-        (::std::numeric_limits< ::std::uintmax_t>::max)() / modulus)
+    if(std::uintmax_t(modulus) <=
+        (std::numeric_limits< std::uintmax_t>::max)() / modulus)
     {
       return static_cast<IntType>(std::uintmax_t(a) * b % modulus);
     } else {

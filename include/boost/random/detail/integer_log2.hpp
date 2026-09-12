@@ -72,7 +72,7 @@ BOOST_RANDOM_DETAIL_CONSTEXPR int integer_log2(T t)
 {
     return integer_log2_impl<
         ::boost::detail::max_pow2_less<
-            ::std::numeric_limits<T>::digits, 4
+            std::numeric_limits<T>::digits, 4
         >::value
     >::apply(t, 0);
 }

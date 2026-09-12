@@ -225,11 +225,11 @@ template<class IntType, IntType m, class SeedSeq>
 IntType seed_one_int(SeedSeq& seq)
 {
     static const int log = ::boost::conditional<(m == 0),
-        ::std::integral_constant<int, (::std::numeric_limits<IntType>::digits)>,
+        std::integral_constant<int, (std::numeric_limits<IntType>::digits)>,
         ::boost::static_log2<m> >::type::value;
     static const int k =
         (log + ((~(static_cast<IntType>(2) << (log - 1)) & m)? 32 : 31)) / 32;
-    ::std::uint_least32_t array[log / 32 + 4];
+    std::uint_least32_t array[log / 32 + 4];
     seq.generate(&array[0], &array[0] + k + 3);
     IntType s = 0;
     for(int j = 0; j < k; ++j) {
@@ -244,14 +244,14 @@ template<class IntType, IntType m, class Iter>
 IntType get_one_int(Iter& first, Iter last)
 {
     static const int log = ::boost::conditional<(m == 0),
-        ::std::integral_constant<int, (::std::numeric_limits<IntType>::digits)>,
+        std::integral_constant<int, (std::numeric_limits<IntType>::digits)>,
         ::boost::static_log2<m> >::type::value;
     static const int k =
         (log + ((~(static_cast<IntType>(2) << (log - 1)) & m)? 32 : 31)) / 32;
     IntType s = 0;
     for(int j = 0; j < k; ++j) {
         if(first == last) {
-            boost::throw_exception(::std::invalid_argument("Not enough elements in call to seed."));
+            boost::throw_exception(std::invalid_argument("Not enough elements in call to seed."));
         }
         IntType digit = const_mod<IntType, m>::apply(IntType(*first++));
         IntType mult = IntType(1) << 32*j;
