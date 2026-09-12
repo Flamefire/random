@@ -19,7 +19,6 @@
 
 #include <cstdint>
 #include <iostream>
-#include <limits>
 #include <boost/config.hpp>
 #include <boost/static_assert.hpp>
 #include <boost/random/detail/config.hpp>

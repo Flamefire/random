@@ -22,7 +22,6 @@
 #include <iosfwd>
 #include <algorithm>     // std::max
 #include <iterator>
-#include <limits>
 #include <boost/config/no_tr1/cmath.hpp>         // std::pow
 #include <boost/config.hpp>
 #include <boost/integer/integer_mask.hpp>
