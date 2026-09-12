@@ -188,8 +188,8 @@ public:
     return base_t::operator()();
   }
 
-  /** @copydoc boost::random::niederreiter_base2_engine::discard(boost::uintmax_t) */
-  void discard(boost::uintmax_t z)
+  /** @copydoc boost::random::niederreiter_base2_engine::discard(std::uintmax_t) */
+  void discard(std::uintmax_t z)
   {
     base_t::discard(z);
   }
@@ -229,7 +229,7 @@ public:
  *
  * However, it is possible to provide your own table to \sobol_engine should the default one be insufficient.
  */
-typedef sobol_engine<boost::uint_least64_t, 64u, default_sobol_table> sobol;
+typedef sobol_engine<std::uint_least64_t, 64u, default_sobol_table> sobol;
 
 } // namespace random
 

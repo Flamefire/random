@@ -18,7 +18,6 @@
 #include <set>
 #include <algorithm>
 
-#include <boost/cstdint.hpp>
 #include <boost/random.hpp>
 
 #include <boost/math/special_functions/gamma.hpp>

@@ -317,7 +317,7 @@ public:
   //!\endcode
   //!
   //!Throws: range_error.
-  void discard(boost::uintmax_t z)
+  void discard(std::uintmax_t z)
   {
     base_t::discard(z);
   }
@@ -351,7 +351,7 @@ public:
  *
  * However, it is possible to provide your own table to \niederreiter_base2_engine should the default one be insufficient.
  */
-typedef niederreiter_base2_engine<boost::uint_least64_t, 64u, default_niederreiter_base2_table> niederreiter_base2;
+typedef niederreiter_base2_engine<std::uint_least64_t, 64u, default_niederreiter_base2_table> niederreiter_base2;
 
 } // namespace random
 
